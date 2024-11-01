@@ -1,0 +1,39 @@
+
+
+from turtle import *  # importing everything from turtle library 
+
+# Set up the screen size
+setup(width=2000, height=800)
+
+speed(0)  # maximum speed for drawing
+bgcolor("black")  # setting black color for background
+
+# Create a list of planets with their colors and radius
+planets = [
+    ("orange", 90),  # Orange Planet
+    ("grey", 50),    # Grey Planet
+    ("red", 70),     # Red Planet
+    ("green", 60),   # Green Planet
+    ("yellow", 50),  # Yellow Planet
+    ("blue", 70),    # Blue Planet
+    ("white", 80),   # White Planet
+    ("purple", 65)   # Purple Planet
+]
+
+# Initial position adjustment to center all planets better
+penup()
+goto(-300, 0)  # Start closer to the left side of the screen
+pendown()
+
+
+# Draw planets with appropriate spacing
+for color_name, radius in planets:
+    color(color_name)
+    begin_fill()
+    circle(radius)
+    end_fill()
+    penup()
+    forward(radius * 2.5)  # Adjust distance to fit all planets in view
+    pendown()
+
+done()

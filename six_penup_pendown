@@ -1,0 +1,54 @@
+
+
+
+
+
+from turtle import *
+
+
+circle(90)          # making circle from radius 90
+penup()             # It removes trails by penup because pen is up    
+forward(200)
+pendown()
+circle(90)
+
+penup()             # It put the pen down so start showing the trail.
+backward(100)
+right(90)
+forward(50)
+pendown()
+
+right(45)
+forward(200)
+
+left(135)
+forward(280)
+
+left(135)
+forward(198)
+penup()
+left(135)
+forward(200)
+pendown()
+
+
+right(90)               
+forward(100)  
+left(90)
+forward(100)
+left(90)
+forward(200)
+left(90)
+forward(100)
+left(90)
+forward(100)
+
+
+
+
+
+
+done()
+
+
+

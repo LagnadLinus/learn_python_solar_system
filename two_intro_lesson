@@ -1,0 +1,15 @@
+
+
+
+from turtle import *        # Importing everythng from turtle library 
+
+forward(100)                # moving 100 px distance forward 
+left(90)                    # turning 90 px distance to the left / we can also do right 
+forward(100)                # Again moving 100 px forward 
+left(90)
+forward(100)
+left(90)
+forward(100)
+# Now above codes is making a square shape in the resule. 
+
+done()                      # In our local machine, it will keep running the code so to stop, we write done 
